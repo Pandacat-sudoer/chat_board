@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ru's Board</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="chat">
+        <ul id="messages"></ul>
+        <form id="message-form">
+            <input id="message-input" autocomplete="off">
+            <button>Send</button>
+        </form>
+<form id="thread-form">
+    <label for="thread-title">Title:</label>
+    <input id="thread-title" type="text" autocomplete="off" required>
+    <label for="thread-content">Content:</label>
+    <textarea id="thread-content" rows="5" required></textarea>
+    <button>Create Thread</button>
+</form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+    <script src="socket.js"></script>
+    <script src="express.js"></script>
+</body>
+</html>
